@@ -11,6 +11,6 @@ app.use(cors({
 ConnectDB()
 const port = process.env.PORT || 4500
 app.listen(port,()=>{
-    console.log(`the app is listen at http://localhost:${port}`);
+    console.log(`the app is listen at ${port}`);
 });
 
