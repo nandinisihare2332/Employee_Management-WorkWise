@@ -9,3 +9,7 @@ const port = process.env.PORT || 4500
 app.listen(port,()=>{
     console.log(`the app is listen at http://localhost:${port}`);
 });
+app.use(cors({
+  origin: process.env.CLIENT_URL,
+  credentials: true
+}))
